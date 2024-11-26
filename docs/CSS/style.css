@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8d9cd;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8ded1 ;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar .button {
+    color: #fff;
+    margin: 0 15px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #444;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-bar .button:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px 20px;
+}
+
+.logo-container {
+    margin-bottom: 5px;
+}
+
+.logo-container img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 2px solid #333; 
+    object-fit: cover; 
+}
+
+
+.row-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.image-container {
+    width: 400px;
+    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.containerr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.row-containerr {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    max-width: 1300px; /* Increase max-width for a larger layout */
+}
+
+.row-containerr:nth-child(1) {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for the first row */
+}
+
+.row-containerr:nth-child(2) {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for the second row */
+}
+
+.image-container {
+    width: 100%;
+    height: 500;
+    padding-bottom: 33.33%; /* This makes the container height maintain an aspect ratio of 3:1 */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensures images are positioned inside the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    position: absolute; /* Ensure the image is positioned correctly within the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the aspect ratio of the image */
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-containerrr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row-containerrr {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.image-containerrr {
+    width: 750px;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-containerrr:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-containerrr img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
